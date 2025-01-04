@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>JavaScript</title>
+</head>
+<body class="pt-5 pb-5">
+  <main class="container">
+    <h1>Вопросы по JavaScript уровня Junior 1</h1>
+    <hr>
+    <section>
+      <h2>1. Какие типы данных существуют в JavaScript?</h2>
+      <ol>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Symbol</li>
+        <li>Bigint</li>
+        <li>Undefined</li>
+        <li>Null</li>
+        <li>Objects</li>
+      </ol>
+      <footer>
+        <address><a href="https://htmlacademy.ru/blog/js/javascript-types" target="newtab">Типы данных в JavaScript. Инструкция для начинающих</a> | HTMLACADEMY.RU</address>
+      </footer>
+    </section>
+
+    <section>
+      <h2>2. Какие типы в JS изменяемы, какие нет?</h2>
+      <p>Все примитивные типы в JS являются неизменяемыми, это:</p>
+      <ol>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Symbol</li>
+        <li>Bigint</li>
+      </ol>
+      <p>Сложные типы (объекты, массивы, функции) являются изменяемыми.</p>
+      <footer>
+        <address>
+          <a href="https://doka.guide/js/ref-type-vs-value-type/" target="newtab">Хранение по ссылке и по значению</a> | DOKA.GUIDE
+        </address>
+      </footer>
+    </section>
+
+    <section>
+      <h2>3. Что значит ссылка на переменную?</h2>
+      <p>Пример: создадим переменную <code>a</code> и присвоим ей значение в виде массива <code>[1, 2, 3]</code>. Затем создадим переменную <code>b</code> и присвоим ей значение <code>a</code>. Изменим первое значение в массиве <code>b[0] = 30;</code>. Если выведем в консоль <code>console.log(a[0]);</code>, то увидим, что и здесь первое значение массива изменилось. Т.е. переменная <code>b</code> хранит не копию массива <code>a</code>, а ссылку на него.</p>
+    </section>
+
+    <section>
+      <h2>4. Что такое NaN? Как проверить, что переменная NaN?</h2>
+      <p><code>NaN</code> — это результат некоторых математических операций в JS, означающий <code>not a number</code> (не число).</p>
+      <p>Мы получим <code>NaN</code>, если:</p>
+      <ol>
+        <li>попытаемся произвести арифметическую операцию с операндом, не являющимся числом (кроме сложения) например, <code>'number' * 5</code>;</li>
+        <li>операнды не определены, например, <code>undefined + undefined</code>;</li>
+        <li>при ошибке парсинга, например, <code>parseInt('{}')</code>;</li>
+        <li>один из операндов в математической операции равен <code>NaN</code>, например, <code>NaN + 56</code>;</li>
+        <li>произведем арифметическую операцию, результат которой не входит в диапазон действительных чисел.</li>
+      </ol>
+      <p>При помощи метода <code>Number.isNaN(someValue)</code> можно узнать равно ли переданное значение <code>NaN</code>.</p>
+      <footer>
+        <address>
+          <a href="https://doka.guide/js/number/" target="newtab">Тип данных для работы с числами</a> | DOKA.GUIDE
+        </address>
+      </footer>
+    </section>
+
+    <section>
+      <h2>5. Что значит создавать переменную через конструктор или через литерал?</h2>
+      <p>Создавать переменную через конструктор означает использовать специальную функцию-конструктор и оператор <code>new</code>, например, <code>const a = new String('str');</code> — создание переменной, содержащей строку, через конструктор.</p>
+      <p>Создавать переменную через литерал, означает использовать упрощенный способ, т.е. записывать значение без функции-конструктора, <code>const a = 'str';</code></p>
+    </section>
+    
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
