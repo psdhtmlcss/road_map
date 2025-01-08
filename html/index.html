@@ -14,7 +14,7 @@
       <h2>1. Как сделать верстку семантической и зачем это нужно?</h2>
       <p><strong>Семантика (гр. "обозначающий")</strong>. В HTML смысловое использование тегов, т.е. с учетом их предназначения. Это нужно для браузеров и различных технических устройств, например, скринридеров для указания значения и роли того или иного элемента на странице.</p>
       <footer>
-        <address><a href="https://doka.guide/html/semantics/" target="newtab">Как работает семантика и зачем вообще она нужна</a> | DOKA.GUIDE</address>
+        <address><a href="https://doka.guide/html/semantics/" target="newtab">Как работает семантика и зачем вообще она нужна</a> | <cite>DOKA.GUIDE</cite></address>
       </footer>
     </section>
 
@@ -22,7 +22,7 @@
       <h2>2. Что такое <code>Doctype</code> и зачем он нужен?</h2>
       <p><code>Doctype</code> — тип документа, указывающий какой стандарт или версия языка используется в данном документе. В настоящее время используется запись <code>&lt;!doctype html&gt;</code></p>
       <footer>
-        <address><a href="https://doka.guide/html/doctype/" target="newtab">Doctype</a> | DOKA.GUIDE</address>
+        <address><a href="https://doka.guide/html/doctype/" target="newtab">Doctype</a> | <cite>DOKA.GUIDE</cite></address>
       </footer>
     </section>
 
@@ -47,6 +47,40 @@
         <li><code>caption</code> — тег нужен для указания подписи к таблице;</li>
         <li><code>scope</code> — html-атрибут, связывающий между собой ячейки с заголовком и обычные ячейки. Предназначен для скринридеров.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>В чем заключается отличие чекбоксов от радиокнопок?</h2>
+      <ul>
+        <li>Использование чекбоксов позволяет выбрать несколько вариантов из списка.</li>
+        <li>У одиночного чекбокса можно снять галочку, у радиокнопки нет, только сбросив форму.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Как связать радиокнопки в группу?</h2>
+      <p>Чтобы связать радиокнопки в группу, необходимо задать каждой одинаковое значение для атрибута <code>name</code>.</p>
+    </section>
+
+    <section>
+      <h2>БЭМ</h2>
+      <section>
+        <h3>Что такое БЭМ?</h3>
+        <p><strong>БЭМ (блок, элемент, модификатор)</strong> — компонентный подход в веб-разработке, в основе которого лежит принцип разделения интерфейса на независимые блоки.</p>
+        <footer>
+          <address>
+            <a href="https://ru.bem.info/methodology/quick-start/#%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" target="newtab">БЭМ</a> | <cite>ru.bem.info</cite>
+          </address>
+        </footer>
+      </section>
+      <section>
+        <h3>Что такое Блок?</h3>
+        <p><strong>Блок</strong> — функционально независимый компонент страницы, который может быть неоднократно использован. В HTML блоки представлены атрибутом <code>class</code>. Название блока характеризует смысл, а не состояние. Блоку не задают внешнюю геометрию и позиционирование. Блоки можно вкладывать друг в друга.</p>
+        <footer>
+          <address>
+            <a href="https://ru.bem.info/methodology/quick-start/#%D0%91%D0%BB%D0%BE%D0%BA" target="newtab">Блок</a> | <cite>ru.bem.info</cite>
+          </address>
+        </footer>
+      </section>
     </section>
     
   </main>

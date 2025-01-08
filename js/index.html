@@ -23,7 +23,7 @@
         <li>Objects</li>
       </ol>
       <footer>
-        <address><a href="https://htmlacademy.ru/blog/js/javascript-types" target="newtab">Типы данных в JavaScript. Инструкция для начинающих</a> | HTMLACADEMY.RU</address>
+        <address><a href="https://htmlacademy.ru/blog/js/javascript-types" target="newtab">Типы данных в JavaScript. Инструкция для начинающих</a> | <cite>HTMLACADEMY.RU</cite></address>
       </footer>
     </section>
 
@@ -40,7 +40,7 @@
       <p>Сложные типы (объекты, массивы, функции) являются изменяемыми.</p>
       <footer>
         <address>
-          <a href="https://doka.guide/js/ref-type-vs-value-type/" target="newtab">Хранение по ссылке и по значению</a> | DOKA.GUIDE
+          <a href="https://doka.guide/js/ref-type-vs-value-type/" target="newtab">Хранение по ссылке и по значению</a> | <cite>DOKA.GUIDE</cite>
         </address>
       </footer>
     </section>
@@ -64,7 +64,7 @@
       <p>При помощи метода <code>Number.isNaN(someValue)</code> можно узнать равно ли переданное значение <code>NaN</code>.</p>
       <footer>
         <address>
-          <a href="https://doka.guide/js/number/" target="newtab">Тип данных для работы с числами</a> | DOKA.GUIDE
+          <a href="https://doka.guide/js/number/" target="newtab">Тип данных для работы с числами</a> | <cite>DOKA.GUIDE</cite>
         </address>
       </footer>
     </section>
@@ -73,6 +73,26 @@
       <h2>5. Что значит создавать переменную через конструктор или через литерал?</h2>
       <p>Создавать переменную через конструктор означает использовать специальную функцию-конструктор и оператор <code>new</code>, например, <code>const a = new String('str');</code> — создание переменной, содержащей строку, через конструктор.</p>
       <p>Создавать переменную через литерал, означает использовать упрощенный способ, т.е. записывать значение без функции-конструктора, <code>const a = 'str';</code></p>
+    </section>
+
+    <section>
+      <h2>6. Когда при обращении к свойству объекта следует использовать точечную нотацию, а когда через строку в квадратных скобках?</h2>
+      <p>Если название свойства объекта имеет пробелы, начинается с цифры или содержит специальные символы, кроме <code>$</code> и <code>_</code>, то следует использовать квадратные скобки, в остальных случаях можно использовать точечную нотацию.</p>
+      <footer>
+        <address>
+          <a href="https://learnjs.ru/lessons/objects/" target="newtab">Объекты в JavaScript</a> | <cite>learnjs.ru</cite>
+        </address>
+      </footer>
+    </section>
+
+    <section>
+      <h2>7. Что произойдет, если попытаться получить несуществующее в объекте свойство?</h2>
+      <p>Получим <code>undefined</code>.</p>
+    </section>
+
+    <section>
+      <h2>8. Что делает метод <code>hasOwnProperty()</code>?</h2>
+      <p>Метод <code>hasOwnProperty()</code> возвращает логическое значение, указывающее, содержит ли объект указанное свойство (собственное, неунаследованное).</p>
     </section>
     
   </main>

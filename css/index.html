@@ -18,12 +18,13 @@
         <li><code>inline-block</code> — делает элемент строчным, но позволяет задать значения ширины и высоты;</li>
         <li><code>flex</code> — делает элемент флекс-контейнером;</li>
         <li><code>grid</code> — делает элемент грид-контейнером;</li>
+        <li><code>none</code> — скрывает элемент;</li>
         <li>...</li>
       </ul>
       <footer>
         <address>
-          <p><a href="https://developer.mozilla.org/ru/docs/web/css/display/" target="newtab">Другие значения свойства <code>display</code></a> на developer.mozilla.org</p>
-          <p><a href="https://habr.com/ru/companies/ruvds/articles/746478/" target="newtab">О том, как браузеры назначают свойства дочерним элементам в зависимости от значения свойства <code>display</code> родителя</a> на Хабре</p>
+          <p><a href="https://developer.mozilla.org/ru/docs/web/css/display/" target="newtab">Другие значения свойства <code>display</code></a> | <cite>developer.mozilla.org</cite></p>
+          <p><a href="https://habr.com/ru/companies/ruvds/articles/746478/" target="newtab">О том, как браузеры назначают свойства дочерним элементам в зависимости от значения свойства <code>display</code> родителя</a> | <cite>Хабр</cite></p>
         </address>
       </footer>
     </section>
@@ -33,7 +34,18 @@
       <p>Свойство <code>margin</code> задает внешние отступы у элемента.</p>
       <footer>
         <address>
-          <a href="https://doka.guide/css/margin/" target="newtab">Свойство, которым можно отодвинуть элемент от соседей. Или придвинуть.</a> | DOKA.GUIDE
+          <a href="https://doka.guide/css/margin/" target="newtab">Свойство, которым можно отодвинуть элемент от соседей. Или придвинуть.</a> | <cite>DOKA.GUIDE</cite>
+        </address>
+      </footer>
+    </section>
+
+    <section>
+      <h2>3. Какие есть особенности у отрицательных значений свойства <code>margin</code>?</h2>
+      <p>Отрицательные значения <code>margin-top/left</code> сдвигают элемент вверх/влево. Остальные элементы это учитывают в отличие от сдвига через <code>position</code>.</p>
+      <p>Отрицательные значения <code>margin-right/bottom</code> заставляют другие элементы думать, что блок меньше по размеру справа/снизу, чем он есть на самом деле.</p>
+      <footer>
+        <address>
+          <a href="https://learn.javascript.ru/margin" target="newtab">Margin</a> | <cite>LEARN.JAVASRIPT.RU</cite>
         </address>
       </footer>
     </section>

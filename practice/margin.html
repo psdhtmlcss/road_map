@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2 {
+      margin: 40px 0 20px;
+    }
+    span {
+      background-color: red;
+      color: white;
+      margin: 0 20px;
+    }
+
+    .simple-text {
+      background-color: blue;
+      color: white;
+      margin: 20px 0;
+    }
+
+    .top-element,
+    .bottom-element {
+      background-color: red;
+      color: white;
+      margin: 20px 0;
+    }
+
+    .margin-top {
+      margin-top: -20px;
+      color: white;
+      background-color: red;
+    }
+    .margin-left {
+      margin-left: -20px;
+      color: white;
+      background-color: red;
+    }
+    .relative-top {
+      position: relative;
+      top: -20px;
+      background-color: red;
+      color: white;
+    }
+    .relative-left {
+      position: relative;
+      left: -20px;
+      background-color: red;
+      color: white;
+    }
+    .margin-right {
+      background-color: red;
+      color: white;
+      margin-right: -20px;
+    }
+    .margin-bottom {
+      background-color: red;
+      color: white;
+      margin-bottom: -20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Margin</h1>
+  <h2>По горизонтали внешние отступы не схлопываются</h2>
+  <p>
+    <span>text 1</span>
+    <span>text 2</span>
+  </p>
+  <hr>
+  <h2>По вертикали отступы схлопываются. Сработает тот, который больше.</h2>
+  <div class="top-element">Top element</div>
+  <div class="bottom-element" style="margin-top: 30px;">Bottom element</div>
+  <hr>
+  <h2>Отрицательные margin-top, margin-left</h2>
+  <div class="margin-top">margin-top: -20px</div>
+  <div class="simple-text">Simple text</div>
+  <div class="margin-left">margin-left: -20px</div>
+  <div class="simple-text">Simple text</div>
+  <hr>
+  <h2>Тоже самое через position: relative</h2>
+  <div class="relative-top">position: relative; top: -20px; Он занимает место ниже.</div>
+  <div class="relative-left">position: relative; left: -20px; Занимает место справа</div>
+  <p>
+    <span style="position:relative;left: -20px; margin: 0;">left: -20px;</span>
+    <span style="margin: 0;">Занимает свое место</span>
+  </p>
+  <p>
+    <span style="margin: 0 0 0 -20px;">margin-left: -20px;</span>
+    <span style="margin: 0;">Сдвинулся влево, так как там свободно</span>
+  </p>
+  <hr>
+  <h2>Отрицательные margin-right, margin-bottom</h2>
+  <div style="background-color: black; color: white;">без отступов</div>
+  <div style="background-color: yellowgreen; color: white;">без отступов</div>
+  <div style="background-color: blue; color: white;">без отступов</div>
+  <hr>
+  <div class="margin-right">margin-right: -20px;</div>
+  <div class="margin-bottom">margin-bottom: -20px;</div>
+  <div style="background-color: blue; color: white;">без отступов</div>
+</body>
+</html>
