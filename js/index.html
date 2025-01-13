@@ -10,6 +10,8 @@
   <main class="container">
     <h1>Вопросы по JavaScript уровня Junior 1</h1>
     <hr>
+    <h2>Данные</h2>
+    <hr>
     <section>
       <h2>1. Какие типы данных существуют в JavaScript?</h2>
       <ol>
@@ -93,6 +95,30 @@
     <section>
       <h2>8. Что делает метод <code>hasOwnProperty()</code>?</h2>
       <p>Метод <code>hasOwnProperty()</code> возвращает логическое значение, указывающее, содержит ли объект указанное свойство (собственное, неунаследованное).</p>
+    </section>
+
+    <section>
+      <h2>9. Когда использовать <code>null</code>, а когда <code>undefined</code>?</h2>
+      <p><code>undefined</code> — значение переменной не присвоено.</p>
+      <p><code>null</code> — можно присвоить в качестве значения для переменной, означающего намеренное отсутствие значения.</p>
+      <footer>
+        <address>
+          <a href="https://doka.guide/js/null-primitive/" target="newtab">Null</a> | <cite>Doka.guide</cite>
+        </address>
+      </footer>
+    </section>
+
+    <section>
+      <h2>10. Какие есть способы создания глобальных переменных?</h2>
+      <p>Если присвоить глобальному объекту <code>window</code> переменную в качестве свойства, то данное свойство будет доступно из любого места.</p>
+      <p>В браузере функции и переменные, созданные с помощью <code>var</code>, являются глобальными, т.е. становятся свойствами глобального объекта <code>window</code>.</p>
+      <p>Функции объявленные с помощью синтаксиса Function Declaration, также становятся свойствами глобального объекта <code>window</code>.</p>
+      <p class="alert alert-info">Если необходимо создать глобальную переменную, то лучше это сделать напрямую: <code>window.myVariable = someValue;</code></p>
+      <footer>
+        <address>
+          <a href="https://learn.javascript.ru/global-object" target="newtab">Глобальный объект</a> | <cite>learn.javascript.ru</cite>
+        </address>
+      </footer>
     </section>
     
   </main>

@@ -7,19 +7,26 @@
 </head>
 <body>
   <script>
-    const obj = {
-      name: 'John',
-      surname: 'Smith',
-      'some prop': false,
-      0: true,
-      _: 123,
-      $: true,
-      d() {
-        return false;
-      }
+    // const obj = {
+    //   name: 'John',
+    //   surname: 'Smith',
+    //   'some prop': false,
+    //   0: true,
+    //   _: 123,
+    //   $: true,
+    //   d() {
+    //     return false;
+    //   }
       
-    };
-    console.log(obj.hasOwnProperty('d'));
+    // };
+    // console.log(obj.hasOwnProperty('d'));
+
+    // Глобальные переменные
+    // console.log(window);
+    function someFn() {
+      console.log('test');
+    }
+    window.someFn();
   </script>
 </body>
 </html>
